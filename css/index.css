@@ -1,0 +1,445 @@
+/* 注释1:清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 注释2:清除a标签 */
+a{
+    /* 注释3:清除装饰下面的_ */
+    text-decoration: none;
+    color: #101111;
+}
+/* 注释4:整个网页背景图片 */
+body{
+    background: url("../images/bg.jpg");
+}
+/* 注释5:header设置一个外边距,留出最上边的距离 */
+.header{
+    margin-top: 20px;
+    height: 445px;
+}
+.header>img{
+    float: left;
+    margin-left:85PX ;
+}
+/* 语言部分样式 */
+.language{
+    width: 100%;
+    height: 35px;
+    background-color:#111;
+}
+.language>ul{
+    float: right;
+    margin-right: 80px;
+}
+/* 语言下的标签 */
+.language>ul>li{
+    width: 80px;
+    height: 35px;
+    float: left;
+    margin-left: 5px;
+    /* 注释6:定义样式去列表的点 */
+    list-style: none;
+    /* 注释7:指针变手势 */
+    cursor: pointer;
+}
+/* 注释8:单独选中language的li */
+.language>ul>li:nth-last-of-type(4){
+    background:url("../images/lag.png") ;
+}
+.language>ul>li:nth-last-of-type(4):hover{
+    background:url("../images/lag.png") no-repeat -78px 0px;
+}
+.language>ul>li:nth-last-of-type(3){
+    background:url("../images/lag.png") no-repeat 0px -33px;
+}
+.language>ul>li:nth-last-of-type(3):hover{
+    background:url("../images/lag.png") no-repeat -78px -33px;
+}
+.language>ul>li:nth-last-of-type(2){
+    background:url("../images/lag.png") no-repeat 0px -66px;
+}
+.language>ul>li:nth-last-of-type(2):hover{
+    background:url("../images/lag.png") no-repeat -78px -66px;
+}
+.language>ul>li:nth-last-of-type(1){
+    background:url("../images/lag.png") no-repeat 0px -99px;
+}
+.language>ul>li:nth-last-of-type(1):hover{
+    background:url("../images/lag.png") no-repeat -78px -99px;
+}
+/* 导航样式开始 */
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #002b49;
+}
+.nav>ul{
+    margin-left: 410px;
+    height: 70px;
+}
+.nav li{
+    /* 注释9:向左浮动 */
+    float: left;
+    width: 123.12px;
+    height: 60px;
+    /* 注释10:水平居中 */
+    text-align: center;
+    /* 注释11:一行文字垂直居中 */
+    line-height: 60px;
+    /* 注释12:清楚列的样式前面的点 */
+    list-style: none;
+}
+.nav a{
+    /* 注释13:字的颜色 */
+    color:white;
+    /* 注释14:字的大小 */
+    font-size: 14px;
+}
+/* 注释15:鼠标悬停加入元素 */
+.nav li:hover{
+    color: white;
+    cursor: pointer;
+}
+.banner{
+    width: 100%;
+    height: 340px;
+    background:url("../images/bpic.jpg");
+    /* 注释16:设置背景的大小 */
+    background-size: 100% 340px;
+    /* 注释17:应该是块状化为填充内容,不让他飘走 */
+    overflow: auto;
+}
+.banner>p{
+    font-size: 56px;
+    color: white;
+    margin-left: 750px;
+    margin-top: 35px;
+}
+/* 版心部分 */
+.continer{
+    width: 80%;
+    /* 注释18:上下为0水平居中 */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* 版心第一部分 */
+.continer>.top1{
+    width: 100%;
+    height: 320px;
+}
+.top1>.left{
+    width:218px ;
+    height: 100%;
+    float: left;
+    padding: 0 10px;
+    background-color: #00416c;
+    /* 注释19:padding之后不改变容器大小 */
+    box-sizing: border-box;
+}
+.top1>.center{
+    width: 690px;
+    height: 100%;
+    float: left;
+    margin: 0 10px;
+}
+.top1>.right{
+    width: 243px;
+    height: 100%;
+    float: left;
+}
+.top1>.left>h2{
+    color: #64abf1;
+    font-size: 20px;
+    padding: 15px 0;
+    /* 注释20:下边框一像素实线颜色 */
+    border-bottom: 1px solid #346289;
+}
+.top1>.left>ul{
+    list-style: none;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.top1>.left>ul>li{
+    color: white;
+    line-height: 40px;
+    padding-left: 15px;
+    background: url("../images/ql_dot.png") 
+    /* 注释21:不平铺 背景调位置 */
+    no-repeat 0px 17px; 
+}
+.top1>.left>ul>li:hover{
+    color: #64abf1;
+    cursor: pointer;
+}
+.top1>.center{
+    background: url("../images/zwy2.jpg");
+    background-size: 690px 100%;
+}
+.top1>.right>.news{
+    width: 100%;
+    height: 35px;
+    border-bottom: 3px solid #add5f2;
+    line-height: 35px;
+}
+.top1>.right>.news>.news_left{
+    padding-bottom: 8px;
+    /* 注释22:文字加粗 */
+    font-weight: 900px;
+    border-bottom: 3px solid #3c78a9;
+}
+.top1>.right>.news>.news_right{
+    float: right;
+    font-size: 14px;
+    /* 注释23:字体倾斜 */
+    font-style: italic;
+}
+.top1>.right>.news>.news_right a:hover{
+    color: #4c86d0;
+}
+.top1>.right>ul{
+    width: 100%;
+    height: 270px;
+    background-color: white;
+    margin-top: 13px;
+    padding: 0 12px;
+    list-style: none;
+    box-sizing: border-box;
+    /*注释24: 溢出部分隐藏 */
+    overflow: hidden;
+}
+.top1>.right>ul>li{
+    font-size: 14px;
+    color: #101111;
+    line-height: 32px;
+    /* 注释25:文字同一行显示1 */
+    white-space: nowrap;
+    /* 溢出部分隐藏 2*/
+    overflow: hidden;
+    /* 溢出文字省略号显示 3*/
+    text-overflow: ellipsis;
+    padding-left: 8px;
+    background: url("../images/sm_arrow.png") no-repeat 0px 13px;
+}
+.top1>.right>ul>li:nth-of-type(1){
+    margin-top: 10px;
+}
+.top1>.right>ul>li:hover{
+    /* 注释26:下划线装饰 */
+    text-decoration: underline;
+    cursor: pointer;
+    color: #4c86d0;
+}
+/* 版心第二部分 */
+.top2{
+    width: 100%;
+    height: 430px;
+    margin-top: 15px;
+}
+.top2>.top2_left{
+    width: 918px;
+    height: 430px;
+    background-color: yellowgreen;
+    float: left;
+}
+.top2>.top2_left>.top{
+    width: 100%;
+    height: 60px;
+    background-color:#0062a5;
+    line-height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.top2_left>.top>.title{
+color: white;
+font-size: 18px;
+font-weight: 600;
+}
+.top2_left>.top>.item{
+    background-color: red;
+    padding:0 10px;
+    /* 注释27:给边框加圆角 */
+    border-radius: 3px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.top2_left>.top>.item:hover{
+    color:white;
+    background-color: #003960;
+    cursor: pointer;
+}
+.top2_left>.top>span:nth-of-type(2){
+    margin-left: 140px;
+    background-color: #ffdf5e;
+}
+.top2_left>.top>span:nth-of-type(3){
+    background-color: #60bdfe;
+}
+.top2_left>.top>span:nth-of-type(4){
+    background-color: #9ce280;
+}
+.top2_left>.top>span:nth-of-type(5){ 
+    background-color: #45d2c1;
+}
+.top2_left>.top>span:nth-of-type(6){
+    background-color: #fea7ca;
+}
+.top2_left>.top>.more>a{
+    float: right;
+    font-size: 14px;
+    color: white;
+    /* 字体倾斜 */
+    font-style: italic;
+}
+.top2_left>.top>.more>a:hover{
+    color:#aed5f1;
+}
+.top2>.top2_right{
+    width: 243.8px;
+    height: 430px;
+    float: left;
+    margin-left: 10px;
+}
+.top2_left>.bottom{
+    float: left;
+    position: relative;
+    width: 285px;
+    height: 370px;
+    background-color: red;
+}
+.top2_left>.bottom>.world{
+    width: 100%;
+    height: 126px;
+    background-color: #d1e7f4;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.top2_left>.bottom>.world>.title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.top2_left>.bottom>.world>.title>em{
+    font-size: 28px;
+    color: #0061a4;
+}
+.top2_left>.bottom>.world>p{
+    font-size: 12px;
+}
+.top2_left>.bottom>.world>p:hover{
+    color:#4d86d0;
+}
+.top2_left>.bottom>.pic{
+    width: 100%;
+    height: 244px;
+    background: url("../images/kd.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/* 注释28:id选择器用# 绝对定位找父类 */
+#jt{
+    position: absolute;
+    left:200px;
+}
+.bottom_right{
+    float: left;
+    width: 633px;
+    height: 370px;
+    background-color: white;
+}
+.bottom_right>.br{
+    margin: 19px 11.34px;
+    width: 595px;
+    height: 100px;
+    background-color: yellow;
+}
+.bottom_right>.br>img{
+    float: left;
+    width: 160px;
+    height: 100px;
+}
+.bottom_right>.br>.itemright{
+    padding-left: 175px;
+    box-sizing: border-box;
+    width: 595px;
+    height: 100px;
+    background-color: white;
+}
+.bottom_right>.br>.itemright>p{
+    font-size: 12px;
+}
+.bottom_right>.br>.itemright>h3>em{
+    font-size: 28px;
+    color: #0061a4;
+}
+.top2>.top2_right>.item{
+    float: left;
+    width: 100%;
+    height: 136px;
+    margin-bottom: 7.3px;
+    background-color: white;   
+}
+.top2>.top2_right>.item:nth-of-type(1){
+    background: url("../images/45-2.jpg") no-repeat;
+    background-size: 100% 136px;
+}
+.top2>.top2_right>.item:nth-of-type(2){
+    background: url("../images/honse.jpg") no-repeat;
+    background-size: 100% 136px;
+}
+.top2>.top2_right>.item:nth-of-type(3){
+    background: url("../images/wx3.jpg") no-repeat;
+    background-size: 100% 136px;
+}
+.footer{
+    width: 100%;
+    height: 280px;
+    background-color: #282828;
+    padding: 30px 90px;
+    box-sizing: border-box;
+}
+.footer>.footertop{
+    width: 100%;
+    height: 160px;
+    background-color: #282828;
+    border-bottom: 1px solid #032034;
+    padding-bottom: 30px;
+    /* 注释29:弹性盒子 1*/
+    display: flex;
+    /* 解决最后一排数量不够自动向两端排列问题 2*/
+    justify-content: space-between;
+}
+.footer>.footertop>.left{ 
+    width: 33.33%;
+    height: 160px;
+    background-color:#282828;
+    border-right: 1px solid #032034;
+}
+.footer>.footertop>.left>.leftworld{
+    margin-left: 10px;
+    margin-top: 20px;
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+.footer>.footertop>.left>.leftright{
+    margin-top: 12px;
+}
+.footer>.footertop>.left>.leftright>p{
+    font-size: 12px;
+}
+.footer>.footertop>.center{
+    border-right: 1px solid #032034;
+    width: 33.33%;
+    height: 160px;
+    background: url("../images/IZA7H8SEFX~JPW{G\)NOT[I9.png") no-repeat;
+    background-size: 100% 100%;
+}
+.footer>.footertop>.right{
+    width: 33.33%;
+    height: 160px;
+    background: url("../images/~%EVF0AVZ6M3PH[\)6$$3Y]8.png") no-repeat;
+    background-size: 100% 100%;
+}
+.footer>p{
+    margin-top: 20px;
+    margin-left: 30%;
+}
